@@ -12,3 +12,13 @@ generated class will be found in
 ## run target web service first
 go to producing-web-service and start it in local. verify it is working by visiting http://localhost:8080/ws/countries.wsdl in your browser
 
+## run the application
+
+`./mvnw spring-boot:run` will get Spain country data
+
+You can plug in a different country by:
+
+build the JAR file with `./mvnw clean package`
+
+and then run 
+`java -jar target/consuming-web-service-0.0.1-SNAPSHOT.jar Poland`
